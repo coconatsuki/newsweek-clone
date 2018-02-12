@@ -1,0 +1,25 @@
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.main-header-top {
+  background-color: #f72210;
+}
+
+.newsweek-logo {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 4.5em;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width: 992px) {
+  .main-header-top {
+      height: 95px;
+      padding: 20px 10px 15px;
+    }
+}
