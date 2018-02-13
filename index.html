@@ -10,31 +10,43 @@
   <title>Newsweek</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid body p-0">
     <header class="main-header">
       <div class="main-header-top d-flex">
-        <div class=" nav main-header-top-1 d-flex col-3 align-items-center">
-          <div class="edition-menu">
-            <a href="#"></a>
-            <ul class="menu">
-
-            </ul>
-          </div>
-          <date>Mon, Feb 12, 2018</date>
-        </div>
+        <ul class=" nav main-header-top-1 d-flex col-3 align-items-center justify-content-between">
+          <li class="nav-item edition-menu dropdown-item">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">U.S EDITION</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">U.K. Edition</a>
+                <a class="dropdown-item" href="#">INTERNATIONAL</a>
+                <a class="dropdown-item" href="#">MIDDLE EAST</a>
+                <a class="dropdown-item" href="#">JAPAN</a>
+                <a class="dropdown-item" href="#">PAKISTAN</a>
+              </div>
+          </li>
+          <li class="nav-item nav-date"><date>Mon, Feb 12, 2018</date></li>
+        </ul>
         <div class="main-header-top-2 d-flex col-6 justify-content-center align-items-center">
           <a class="newsweek-logo" href="#">Newsweek</a>
         </div>
-        <div class="main-header-top-3 d-flex col-3 align-items-center">
-          <a href="#">Sign in</a>
-          <a href="#">SUBSCRIBE</a>
-        </div>
-      </div>
-      <div class="main-header-middle">
-        <a href="#"><span></span></a>
+        <ul class="nav main-header-top-3 d-flex col-3 align-items-center justify-content-end">
+          <li class="nav-item p-2"><a href="#">SIGN IN</a></li>
+          <li class="nav-item p-2 subscribe-nav-button"><a href="#">SUBSCRIBE ></a></li>
+        </ul>
       </div>
       <div class="main-header-bottom">
-
+        <ul class="d-fluid nav justify-content-around">
+          <li class="nav-item"><a href="#">U.S.</a></li>
+          <li class="nav-item"><a href="#">World</a></li>
+          <li class="nav-item"><a href="#">Business</a></li>
+          <li class="nav-item"><a href="#">Tech & Science</a></li>
+          <li class="nav-item"><a href="#">Culture</a></li>
+          <li class="nav-item"><a href="#">Sports</a></li>
+          <li class="nav-item"><a href="#">Health</a></li>
+          <li class="nav-item"><a href="#">Opinion</a></li>
+          <li class="nav-item"><a href="#">Green Rankings</a></li>
+          <li class="nav-item"><a href="#">Search</a></li>
+        </ul>
       </div>
     </header>
     <main>
