@@ -1,0 +1,74 @@
+// MEDIA QUERIES
+
+@media screen and (min-width: 992px) {
+  .main-header-top {
+      height: 95px;
+      padding: 20px 10px 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .main-header-top-3 {
+    justify-content: space-around;
+  }
+  .subscription-image-container {
+    height: 20%;
+  }
+  .main-header-bottom a {
+    font-size: 1em;
+  }
+  .signup-header  {
+    h5 {
+    font-size: 1.3em;
+    }
+  }
+  .signin-button {
+    font-size: 1.1em;
+    width: 70%;
+  }
+  .preferences {
+    font-size: 0.85em;
+  }
+  .info a {
+    font-size: 0.8em;
+  }
+  h5.subscription-article {
+    font-size: 1.5em;
+  }
+  .newsweek-logo, .nav-date date {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .magazine-title h5 {
+    font-size: inherit;
+  }
+  .subscription {
+    margin-top: 10%;
+    .newsweek-icon {
+      display: none;
+    }
+  }
+  .subscription-image-container img {
+    max-width: 30%;
+  }
+  a.brand {
+    display: none;
+  }
+  .up-footer {
+    padding: 3%;
+  }
+  .social-links li {
+    padding-right: 8%;
+  }
+  .latest-headlines-and-signup {
+    margin-top: 10%;
+  }
+  .signup-form {
+      margin: 3% auto;
+    }
+    article {
+      margin-top: 4%;
+    }
+}

@@ -1,0 +1,67 @@
+// ----------------------------------NAV TOP----------------------------------
+
+.edition-menu .edition-names a {
+  color: #777;
+  font-size: inherit;
+}
+
+.main-header {
+    a {
+      font-weight: bold;
+    }
+  .newsweek-logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.5em;
+    line-height: 1em;
+  }
+}
+
+.main-header-top {
+  background-color: $newsweek-red;
+  a, date {
+    color: white;
+    font-size: 1.2em;
+  }
+}
+
+.nav-item.edition-menu.dropdown-item {
+  padding: 0;
+  width: 52%;
+  background-color:  $newsweek-red;
+}
+
+.nav-item.nav-date date {
+  padding: 8px 0 8px 8px;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.55);
+}
+
+.main-header-top-3 {
+  justify-content: flex-end;
+  .subscribe-nav-button {
+    background-color: white;
+    a {
+      color:  $newsweek-red;
+    }
+  }
+}
+
+// ----------------------------------NAV BOTTOM ------------------------------------
+
+.main-header {
+  border-bottom: 2px solid #EEE;
+}
+
+.main-header-bottom {
+  a {
+    font-size: 1.2em;
+  }
+}
+
+.navbar.navbar-expand-lg.main-header-bottom.navbar-light a {
+  color: black;
+}
+
+.navbar.navbar-expand-lg.main-header-bottom.navbar-light a:hover {
+  color: $newsweek-red !important;
+}
