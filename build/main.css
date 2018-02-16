@@ -15,13 +15,21 @@ i {
   height: 16px;
   width: 16px; }
 
+.main-container {
+  padding: 2% 2% 0 2%; }
+
 .container-fluid.body {
   max-width: 1200px; }
 
 .info {
   padding: 1.5%; }
 
-.latest-headlines a, .signup-form h5, .signup-form a, .magazine-title h5, .subscription h5 {
+.latest-headlines a,
+.signup-form h5,
+.signup-form a,
+.magazine-title h5,
+.subscription h5,
+.card-title {
   font-family: 'Archivo Narrow', sans-serif; }
 
 .signup-form h5, .signup-form .preferences, .info p {
@@ -54,34 +62,33 @@ i {
   font-size: 0.9em;
   color: rgba(255, 255, 255, 0.55); }
 
-.main-header-top-3 .subscribe-nav-button {
-  background-color: white; }
-
-.main-header-top-3 .subscribe-nav-button a {
-  color: #f72210; }
+.main-header-top-3 {
+  justify-content: flex-end; }
+  .main-header-top-3 .subscribe-nav-button {
+    background-color: white; }
+    .main-header-top-3 .subscribe-nav-button a {
+      color: #f72210; }
 
 .main-header-bottom a {
-  font-size: 1.3em; }
-
+  font-size: 1.2em; }
 .main-header-bottom ul {
   border: 2px solid #EEE;
   height: 15%; }
-
-.nav-item.search-bar input {
-  font-size: inherit;
-  font-weight: 400; }
-
 .main-header-bottom li {
   padding: 0 1.5%;
   border-right: 1px solid #EEE;
   align-self: center; }
+
+.nav-item.search-bar input {
+  font-size: inherit;
+  font-weight: 400; }
 
 .search-bar {
   width: 20%;
   align-self: center; }
 
 .search-icon {
-  background: url("img/search-glass.svg") no-repeat; }
+  background: url("../img/search-glass.svg") no-repeat; }
 
 .main-story p {
   padding-bottom: 3%;
@@ -94,10 +101,11 @@ i {
   margin-top: 3%; }
 
 .newsweek-icon {
-  background: url("img/n.png") no-repeat;
-  width: 40px;
-  height: 30px;
-  background-size: cover; }
+  background: url("../img/n.png") no-repeat;
+  min-width: 25px;
+  width: 55px;
+  height: 35px;
+  background-size: contain; }
 
 .latest-headlines-and-signup {
   padding: 0 4%; }
@@ -111,9 +119,8 @@ i {
 
 .latest-headlines-title {
   padding-top: 0; }
-
-.latest-headlines-title a {
-  color: #444; }
+  .latest-headlines-title a {
+    color: #444; }
 
 .signup-form {
   margin-top: 15%;
@@ -132,9 +139,153 @@ i {
   font-size: 1.2em; }
 
 .magazine-title {
+  border-bottom: 1px solid #DDD;
+  align-items: center; }
+
+.subscription-article {
+  padding-bottom: 2%; }
+  .subscription-article:hover {
+    background-color: rgba(0, 0, 0, 0.02); }
+
+.subscription-image-container {
+  height: 50%;
   border-bottom: 1px solid #DDD; }
+  .subscription-image-container img {
+    max-width: 55%; }
+
+.card-title {
+  font-size: 1.7em; }
+
+.subscribe-button {
+  background-color: #f72210;
+  padding: 3% 4%; }
+  .subscribe-button a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white; }
+
+.subscription-list i.check-icon {
+  background: url("../img/correct-symbol.png") no-repeat;
+  background-position: 0px 0px;
+  margin-right: 4%; }
+.subscription-list li {
+  line-height: 1.5em;
+  font-size: 0.95em; }
+
+.up-footer {
+  margin-top: 2%;
+  border-top: 2px solid #EEE;
+  padding-top: 1%; }
+
+.brand {
+  background: url("../img/logo.png") no-repeat;
+  background-size: contain;
+  background-position: 1px 21px;
+  height: 10%;
+  width: 40%; }
+
+.brand-container span {
+  margin-left: 7%;
+  padding-top: 6.5%;
+  font-size: 0.75em;
+  opacity: 0.8; }
+
+.bottom-footer ul {
+  border-top: 1px solid #DDD; }
+.bottom-footer li.footer-li {
+  border-right: 1px solid #DDD;
+  font-size: 0.9em;
+  margin-right: 0;
+  padding: 1%;
+  align-self: center; }
+.bottom-footer a {
+  color: #777; }
+
+.social-links {
+  margin-bottom: 0;
+  padding-top: 3%; }
+  .social-links li {
+    padding-right: 2%;
+    height: 18px; }
+  .social-links i {
+    background: url("../img/icons-sprite.svg") no-repeat;
+    height: 18px;
+    opacity: 0.5;
+    width: 18px; }
+  .social-links a {
+    border-radius: 50%; }
+
+#facebook {
+  background-position: -256px -256px; }
+
+#tweeter {
+  background-position: -958px -958px; }
+
+#instagram {
+  background-position: -351px -351px; }
+
+#google {
+  background-position: -303px -300px; }
+
+#pinterest {
+  background-position: -606px -606px; }
+
+#rss {
+  background-position: -399px -399px; }
 
 @media screen and (min-width: 992px) {
   .main-header-top {
     height: 95px;
     padding: 20px 10px 15px; } }
+@media screen and (max-width: 992px) {
+  .main-header-top-3 {
+    justify-content: space-around; }
+
+  .subscription-image-container {
+    height: 20%; }
+
+  .main-header-bottom a {
+    font-size: 1em; }
+
+  .search-bar {
+    width: inherit; }
+
+  .signup-header h5 {
+    font-size: 1.3em; }
+
+  .signin-button {
+    font-size: 1.1em;
+    width: 70%; }
+
+  .preferences {
+    font-size: 0.85em; }
+
+  .info a {
+    font-size: 0.8em; }
+
+  h5.subscription-article {
+    font-size: 1.5em; }
+
+  .newsweek-logo, .nav-date date {
+    display: none; } }
+@media screen and (max-width: 500px) {
+  .subscription-image-container img {
+    max-width: 30%; }
+
+  a.brand {
+    display: none; }
+
+  .up-footer {
+    padding: 3%; }
+
+  .social-links li {
+    padding-right: 8%; }
+
+  .latest-headlines-and-signup {
+    margin-top: 10%; }
+
+  .signup-form {
+    margin: 3% auto; }
+
+  article {
+    margin-top: 4%; } }
